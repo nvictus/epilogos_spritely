@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title> epilogos </title>
     
-    <meta name="description" content="epilogos" />
+    <meta name="description" content="epilogos: analysis and visualization of multi-epigenome datasets" />
     <meta name="keywords" content="" />
 <!--    <link rel="icon" href="http://spritely.net/images/favicon.ico" type="image/x-icon" /> -->
 <!--    <link rel="shortcut icon" href="http://spritely.net/images/favicon.ico" type="image/x-icon" /> -->
@@ -14,6 +14,21 @@
     <script src="scripts/jquery-ui-1.7.2.spritely.custom.min.js" type="text/javascript"></script>
     <script src="scripts/jquery.spritely.js"></script>
     <script src="scripts/main.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://epigenomegateway.wustl.edu/browser/style.css" />
+    <script type="text/javascript" src="http://epigenomegateway.wustl.edu/browser/base.js"></script>
+    <script type="text/javascript" src="http://epigenomegateway.wustl.edu/browser/personality.js"></script>
+    <script type="text/javascript" src="http://epigenomegateway.wustl.edu/browser/embed.js"></script>
+ 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-38497211-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+
 
 </head>
 
@@ -47,26 +62,155 @@
 <!--    <div id="noFlash">No Flash? No Problem!</div> -->
     <div id="mainContent">
 
-<h1>epilogos</h1>
 
-<div id="content">
-<p>
-<h2>epilogos</h2>
-<ul>
-<li>A
-<li>B
-<li>C
-<li>D
-<li>E
-</ul>
-</p>
-<h2>Can anybody use epilogos?</h2>
-<p>Almost</p>
+    <h1><b><i>epilogos (&epsilon;&pi;&iota;&lambda;&omicron;&gamma;&omicron;&sigmaf;)</i></b></h1>
 
-</div>
+   <div id=content>
+    <p>
+      <b><i>epilogos</i></b> is a system for the visualization and analysis of large numbers of chromatin state models.
+      <br>
+      It scales up easily to hundreds of epigenomes, provides an intuitive overview of genomic regions of interest,
+      <br>
+      and allows for precise modeling and inference of epigenomic data sets.
+
+      <br><br>
+
+      The current page is only a preview, as we're working on further applications of <b><i>epilogos</i></b>,
+      <br>
+      including, but not limited to, comparative epigenomics and prototype discovery and searching. 
+
+      <br><br>
+
+      <b><font color="red">UPDATE (2015/03/18):</font></b><br>
+      As part of the Roadmap Epigenomics Project, <b><i>epilogos</i></b> are now available for all Roadmap chromatin state models,<br>
+      at the <a href="http://compbio.mit.edu/roadmap" target="_blank">web portal</a> of the Roadmap project.
+      Thanks to Anshul Kundaje and Jin Wook Lee at Stanford for facilitating this.
+     </p>
+    </div>
+
+    <br>
+
+    <!--
+    <embed src="KL_136.mp4" width="800" height="400" scale="aspect" 
+       controller="true" loop="true" autoplay="true">
+    -->
+    <object width="800" height="400">
+      <param name="movie" value="http://www.youtube.com/v/HRD_qzOBj1I&autoplay=1&loop=1&playlist=HRD_qzOBj1I,4ZXuC9cYnvQ,2VCj0nzhqEQ&controls=0&modestbranding=1"></param>
+      <param name="wmode" value="transparent"></param>
+      <embed src="http://www.youtube.com/v/HRD_qzOBj1I&autoplay=1&loop=1&playlist=HRD_qzOBj1I,4ZXuC9cYnvQ,2VCj0nzhqEQ&controls=0&modestbranding=1" 
+             type="application/x-shockwave-flash" wmode="transparent" width="800" height="400"></embed>
+    </object>
+
+    <br>
+
+   <div id=content>
+    <p>
+      We have highlighted a number of 
+      <a href="http://www.broadinstitute.org/~meuleman/epilogos/figures_top_scoring/" target="_blank">example regions</a>,
+      showing the versatility of <b><i>epilogos</i></b>.<br>
+      <table><tr>
+        <td><a href="http://www.broadinstitute.org/~meuleman/epilogos/figures_top_scoring/TOP_005_chr17_79477900_WM20141023.pdf" target="_blank">
+          <img src="http://www.broadinstitute.org/~meuleman/epilogos/figures_top_scoring/TOP_005_chr17_79477900_WM20141023.png" width=200></a></td>
+        <td><a href="http://www.broadinstitute.org/~meuleman/epilogos/figures_top_scoring/TOP_070_chr5_54528700_WM20141023.pdf" target="_blank">
+          <img src="http://www.broadinstitute.org/~meuleman/epilogos/figures_top_scoring/TOP_070_chr5_54528700_WM20141023.png" width=200></a></td>
+        <td><a href="http://www.broadinstitute.org/~meuleman/epilogos/figures_top_scoring/TOP_079_chr19_7084100_WM20141023.pdf" target="_blank">
+          <img src="http://www.broadinstitute.org/~meuleman/epilogos/figures_top_scoring/TOP_079_chr19_7084100_WM20141023.png" width=200></a></td>
+      </tr></table>
+<!--
+      <br>
+      Additionally, we highlight similar examples for regions selected based on a modification of the algorithm,<br>
+      to take into account the co-occurrence of chromatin states across epigenomes, available 
+      <a href="http://www.broadinstitute.org/~meuleman/epilogos/figures_png_page/modrelent/observed/" target="_blank">here</a>.
+      <table><tr>
+        <td><a href="http://www.broadinstitute.org/~meuleman/epilogos/figures_png_page/modrelent/observed/chr3/" target="_blank">
+          <img src="http://www.broadinstitute.org/~meuleman/epilogos/figures_png_page/modrelent/observed/chr3/plot_KLmod_TOP1_chr3_186502900_WM20140911.png" width=200></a></td>
+        <td><a href="http://www.broadinstitute.org/~meuleman/epilogos/figures_png_page/modrelent/observed/chr8/" target="_blank">
+          <img src="http://www.broadinstitute.org/~meuleman/epilogos/figures_png_page/modrelent/observed/chr8/plot_KLmod_TOP1_chr8_82754700_WM20140911.png" width=200></a></td>
+        <td><a href="http://www.broadinstitute.org/~meuleman/epilogos/figures_png_page/modrelent/observed/chr9/" target="_blank">
+          <img src="http://www.broadinstitute.org/~meuleman/epilogos/figures_png_page/modrelent/observed/chr9/plot_KLmod_TOP1_chr9_132566300_WM20140911.png" width=200></a></td>
+      </tr></table>
+-->
+    </p>
+    </div>
+
+    <br>
+
+    <div id=content>
+    <p>
+      <b><i>epilogos</i></b> for the Roadmap Epigenomics Project are browsable in the 
+      <a href="http://epigenomegateway.wustl.edu/browser/?genome=hg19&chrom=chr19&datahub=http://wangftp.wustl.edu/~wmeuleman/epilogos/WashU_qcat/relent/observed/qcat.json&coordinate=chr7:77100000-77600000" target="_blank">Epigenome Browser</a>
+      developed at<br> Washington University in St. Louis.
+      Many thanks to Xin Zhou and Daofeng Li from Ting Wang's lab for that.
+    </p>
+    </div>
+
+    <br>
+
+   <div style='margin:20px;display:inline-block;' id=xxx></div>
+
+<script type='text/javascript'>
+embed_washugb({
+    host:'http://epigenomegateway.wustl.edu',
+    container:document.getElementById('xxx'),
+    genome:'hg19',
+    noDefaultTrack:true,
+    noDeleteButton:true,
+    showFacet4customMetadata:true,
+    coordinate:'chr7:77100000-77600000',
+    foregroundColor:'#ffffff',
+    backgroundColor:'#000000',
+    showContent:[
+    {
+      type:'quantitativeCategorySeries',
+      name:'epilogos surprisal',
+      height:150,
+      url:'http://wangftp.wustl.edu/~wmeuleman/epilogos/WashU_qcat/relent/observed/qcat.gz',
+      backgroundcolor:'#000000',
+      mode:'show',
+      categories:{
+        '1':['Active TSS','#ff0000'],
+        '2':['Flanking Active TSS','#ff4500'],
+        '3':['Transcr at gene 5\' and 3\'','#32cd32'],
+        '4':['Strong transcription','#008000'],
+        '5':['Weak transcription','#006400'],
+        '6':['Genic enhancers','#c2e105'],
+        '7':['Enhancers','#ffff00'],
+        '8':['ZNF genes & repeats','#66cdaa'],
+        '9':['Heterochromatin','#8a91d0'],
+        '10':['Bivalent/Poised TSS','#cd5c5c'],
+        '11':['Flanking Bivalent TSS/Enh','#e9967a'],
+        '12':['Bivalent Enhancer','#bdb76b'],
+        '13':['Repressed PolyComb','#808080'],
+        '14':['Weak Repressed PolyComb','#c0c0c0'],
+        '15':['Quiescent/Low','#ffffff']
+      },
+    },
+    {
+      type:'native_track', 
+      list:[
+        {
+          name:'refGene',
+          mode:'full',
+          color:'#FFFFFF'
+        }
+      ]
+    },
+    ],
+});
+</script>
+
+    <br>
+
+    <div id="content">
+    <p>
+      These data are provided as-is, and a manuscript is in preparation.<br>
+      Please contact Wouter Meuleman (last name @ mit dot edu) for comments and suggestions. Thanks!
+    </p>
+    </div>
+
 
             
-
+<!--
             <div id="sidebar">
                     <a href="https://github.com/artlogicmedia/spritely/archive/v0.6.8.zip"><img alt="Download Spritely" src="http://spritely.net/images/download_spritely_alt.png" /></a>
                     <div style="padding: 12px 0pt 0pt;">
@@ -105,9 +249,12 @@
         </div>
             <div class="clear"></div>
     </div>
+-->
 
+<!--
     <div id="bird2"></div>
     <div id="bird"></div>
+-->
     <div class="clear"></div>
 </div>
 
