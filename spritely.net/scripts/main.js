@@ -54,7 +54,7 @@
                 $('#hill1').pan({fps: 30, speed: 3, dir: 'left', depth: 70});
                 $('#hill1, #hill2, #clouds').spRelSpeed(8);
 
-                $('html').flyToTap();
+                //$('html').flyToTap();
                 if (!window.app.is_ipad && document.location.hash.indexOf('iphone') > -1 ) {
                     // iPhone/iPad
                     $('body').addClass('platform-iphone');

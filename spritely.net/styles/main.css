@@ -2,23 +2,34 @@
 	margin: 0;
 	padding: 0;
 }
+
+     
 body {
 	background: #000;
 	width: auto;
 	height: 100%;
-	font-family: 'Trebuchet MS', Arial, Sans-Serif;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	/* font-family: 'Trebuchet MS', Arial, Sans-Serif; */
 	font-size: 15px;
-	color: #474747;
+	color: #FFF;
 	line-height: 1.6em;
     min-width: 940px;
 }
 a, a:visited {
-	color: #3a9bc7;
+	/* color: #3a9bc7; */
+	color: #FFF;
 	text-decoration: none;
+    font-weight: bold;
 }
 a:hover {
 	text-decoration: underline;
 }
+
+p {
+  background-color: #333333;
+  padding:50px;
+}
+
 h1, h2, h3, h4, h5 {
 	text-transform: uppercase;
 	font-family: Bliss, 'Myriad Pro', 'Trebuchet MS', Arial, Sans-Serif;
@@ -75,6 +86,7 @@ pre {
 	padding-top: 430px;  /* WOUTER */
 	position: relative;
 }
+
 #logo {
 	background: url(../images/spritely_logo.png) 0 0 no-repeat;
 	width: 378px;
@@ -85,6 +97,7 @@ pre {
 	z-index: 1900;
 		text-indent: -9999px;
 }
+
 	#logo a {
 		/*
 			display: block;
@@ -92,6 +105,26 @@ pre {
 			height: 121px;
 		*/
 	}
+
+
+#playpause {
+	background: url(../images/playpause_medium.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 30px;
+	left: 30px; 
+	z-index: 1900;
+	text-indent: -9999px; 
+}
+
+	#playpause a {
+			display: block;
+			width: 50px;
+			height: 50px;
+	}
+
+
 .stage {
 	position: absolute;
 	top: 0;
@@ -253,6 +286,7 @@ pre {
 }
 #content {
 	margin-right: 250px;
+/*    display:inline-block; */
 }
 #sidebar {
 	position: absolute;
