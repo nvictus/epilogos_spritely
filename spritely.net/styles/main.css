@@ -14,8 +14,7 @@ body {
 	line-height: 1.6em;
     min-width: 940px;
 }
-/* a, a:visited { */
-a {
+a, a:visited {
 	/* color: #3a9bc7; */
 	color: #FFFFFF;
 	text-decoration: none;
